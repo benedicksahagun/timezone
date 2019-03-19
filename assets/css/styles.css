@@ -1,0 +1,185 @@
+/** NC TimeZone Styles **/
+
+.nc-time-container {
+	background-color: #cccccc;
+	border-radius: 5px;
+	width: 100%;
+	padding:10px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.tzhd {
+	display: block;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #444;
+}
+
+.nc-time-container h4 {
+	text-align: center;
+	font-family: sans-serif;
+	margin:0 0 5px !important;
+	padding: 0 !important;
+	text-transform: none !important;
+	color: #444 !important;
+	font-style: normal !important;
+	font-size: 20px !important;
+}
+
+.nc-time-container h6 {
+	text-align: center;
+	font-family: sans-serif;
+	margin:0 0 5px !important;
+	padding: 0 !important;
+	text-transform: none !important;
+	color: #444 !important;
+	font-style: italic !important;
+	font-size: 14px !important;
+	font-weight: 300 !important;
+}
+
+.nc-timezone {
+	font-size: 14px;
+	font-family: sans-serif;
+	margin:0 0 10px;
+	width: 100%;
+	border: 1px solid #d1d1d1;
+}
+
+.nc-timezone.hidden{
+	display:  none!important;
+}
+
+.nc-tz-result {
+	
+}
+
+.nc-result-row {
+	background-color: #fff;
+	margin-bottom: 5px;
+	position: relative;
+	display: -webkit-box;
+}
+
+.nc-label {
+	text-align: center;
+	font-size:12px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.nc-tzplace, .nc-tzzone, .nc-tztime, .nc-tzdate, .nc-tzrmv  {
+	box-sizing: border-box;
+	padding:5px;
+	float:left;
+	position: relative;
+	display: table-cell;
+}
+
+.nc-tzplace, .nc-tzzone, .nc-tztime, .nc-tzdate {
+	border-right: 1px solid #d1d1d1;
+}
+
+.nc-tzplace, .nc-tzzone {
+	width: 27%;
+}
+
+.nc-tztime, .nc-tzdate {
+	width: 18%;
+}
+
+.nc-tztime .seconds{
+	display:  none;
+}
+
+.nc-tztime .sep{
+	font-weight:  bold;
+	font-style: normal;
+}
+
+.nc-tztime .sep.blink{
+	color: #a5a5a5;
+}
+
+.nc-tzrmv {
+	width: 10%;
+	text-align: center;
+}
+
+.btnremove {
+	font-size: 12px;
+    text-transform: uppercase;
+    padding: 0.58em;
+    margin-top: 10px;
+}
+
+.timefld, .datefld {
+	float: left;
+	box-sizing: border-box;
+	padding:3px 5px 0 0;
+}
+
+.timefld label, .datefld label {
+	margin:0;
+	font-size:14px;
+	font-family: sans-serif;
+}
+
+.nc-time-btn {
+	text-transform: uppercase;
+	background: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    padding: 0.84375em 0.875em 0.78125em;
+    width: 100% !important;
+    clear: both;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.nc-searchtxt {
+	width: 80%;
+	box-sizing: border-box;
+	padding-right: 3px;
+	float: left;
+}
+
+.nc-searchbtn {
+	width: 20%;
+	float: left;
+	margin-top: 1px;
+}
+
+#nc_place_search{
+	width:  100%;
+}
+
+/** Responsive **/
+
+@media screen and (max-width: 720px) {
+	.nc-tzplace, .nc-tzzone, .nc-tztime, .nc-tzdate {
+		border-right: 0;
+	}
+	.nc-tzplace, .nc-tzzone, .nc-tztime, .nc-tzdate, .nc-tzrmv  {
+		width: 100%;
+		border-bottom: 1px solid #d1d1d1;
+		text-align: center;
+	}
+	.nc-result-row {
+		display: block;
+	}
+	.btnremove {
+		margin-top:0;
+	}
+
+	.nc-searchtxt, .nc-searchbtn {
+		width: 100%;
+		padding:0;
+	}
+	.nc-searchbtn {
+		margin-top: 5px;
+	}
+}
